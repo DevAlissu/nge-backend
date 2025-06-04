@@ -1,0 +1,61 @@
+{
+    "deduplicationId": "5e432867-5acd-4595-9d48-511a076bf317",
+    "time": "2025-04-03T20:57:12.822469934+00:00",
+    "deviceInfo": {
+        "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+        "tenantName": "ChirpStack",
+        "applicationId": "e5e57457-eb51-41d1-9d66-7a55f7b05597",
+        "applicationName": "DEVELOPMENT_NANSEN_CV03",
+        "deviceProfileId": "1e739827-0f5c-4d32-8de1-5829e4914bf1",
+        "deviceProfileName": "NANSEN_CV003_24_CCLASS",
+        "deviceName": "END_DEVICE_HTLRBL32L_NIC",
+        "devEui": "0000000000000001",
+        "deviceClassEnabled": "CLASS_C",
+        "tags": {}
+    },
+    "devAddr": "00a96bcb",
+    "adr": true,
+    "dr": 5,
+    "fCnt": 7,
+    "fPort": 100,
+    "confirmed": false,
+    "data": "DgAClMzuZ3AAAABkMQAAAAAAAGMxAAAAAAAA",
+    "object": {
+        "hora": "17:59:48",
+        "energia_ativa_kWh": 3000.12,
+        "tensao_fase_A": 126.44,
+        "tipo_medidor": "Bifásico",
+        "corrente_fase_B": 0,
+        "data": "03/04/2025",
+        "tensao_fase_B": 300.43,
+        "corrente_fase_A": 0
+    },
+    "rxInfo": [
+        {
+            "gatewayId": "00005813d380cd3c",
+            "uplinkId": 15548,
+            "nsTime": "2025-04-03T20:57:12.608659734+00:00",
+            "rssi": -69,
+            "snr": 10,
+            "channel": 5,
+            "rfChain": 1,
+            "location": {},
+            "context": "M/t7xA==",
+            "metadata": {
+                "region_common_name": "AU915",
+                "region_config_id": "au915_1"
+            },
+            "crcStatus": "CRC_OK"
+        }
+    ],
+    "txInfo": {
+        "frequency": 917800000,
+        "modulation": {
+            "lora": {
+                "bandwidth": 125000,
+                "spreadingFactor": 7,
+                "codeRate": "CR_4_5"
+            }
+        }
+    }
+}

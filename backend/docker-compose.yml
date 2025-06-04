@@ -1,0 +1,42 @@
+version: "3.8"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nansen_app
+   
+    command: >
+      sh -c " python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:10000"
+    volumes:
+      - .:/app
+    ports:
+      - "10000:10000"
+    depends_on:
+      - db
+    restart: always
+    networks:
+      - nansen-network
+
+  db:
+    image: postgres:latest
+    container_name: db
+    
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: app_db
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5435:5432"
+    networks:
+      - nansen-network
+
+volumes:
+  postgres_data:
+
+networks:
+  nansen-network:
+    driver: bridge

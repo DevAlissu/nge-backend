@@ -1,0 +1,22 @@
+{
+    "name": "Quiz Exemplo",
+    "description": "Teste seus conhecimentos ",
+    "responses": [
+        {
+            "text": "ALTERNATIVA A",
+            "is_correct": true
+        },
+        {
+            "text": "ALTERNATIVA B",
+            "is_correct": false
+        },
+        {
+            "text": "ALTERNATIVA C",
+            "is_correct": false
+        },
+        {
+            "text": "ALTERNATIVA D",
+            "is_correct": false
+        }
+    ]
+}
